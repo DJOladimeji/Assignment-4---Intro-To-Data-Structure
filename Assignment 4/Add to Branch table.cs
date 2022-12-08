@@ -8,12 +8,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Assignment_4
 {
-    public partial class Add_to_Customer_Table : Form
+    public partial class Add_to_Branch_table : Form
     {
-        public Add_to_Customer_Table()
+        public Add_to_Branch_table()
         {
             InitializeComponent();
         }
@@ -26,12 +27,10 @@ namespace Assignment_4
                 MySqlConnection con = new MySqlConnection();
                 con.ConnectionString = connstring;
                 con.Open();
-                string sql = "insert into customerTable(firstName, lastName, streetAddress, city, prov, postalCode, phoneNum, birthDay, birthMonth, birthYear, primaryLanguage, accountID, orderID, BranchID) Values('" + textBox1.Text + "', '" + textBox2.Text + "', '" + textBox3.Text + "', '" + textBox4.Text + "', '" + textBox5.Text + "', '" + textBox6.Text + "', '"
-                    + textBox7.Text + "', '" + textBox8.Text + "', '" + textBox9.Text + "', '" + textBox10.Text + "', '" + textBox11.Text + "', '" + textBox12.Text + "', '" + textBox13.Text + "', '" + textBox14.Text + "')";
+                string sql = "insert into branchTable(noOfOrders, streetAddress, city, prov, postalCode, noOfEmployee) Values('" + textBox1.Text + "', '" + textBox2.Text + "', '" + textBox3.Text + "', '" + textBox4.Text + "', '" + textBox5.Text + "', '" + textBox6.Text + "')";
                 MySqlCommand cmd = new MySqlCommand(sql, con);
                 MySqlDataReader reader = cmd.ExecuteReader();
                 con.Close();
-
             }
             catch (MySqlException ex)
             {

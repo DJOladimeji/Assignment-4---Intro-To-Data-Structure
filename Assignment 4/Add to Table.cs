@@ -23,5 +23,22 @@ namespace Assignment_4
 
             a.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+             Add_to_Branch_table a = new Add_to_Branch_table();
+            a.Show();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Add_to_Order_Table a = new Add_to_Order_Table();
+            a.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

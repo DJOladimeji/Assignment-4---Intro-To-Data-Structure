@@ -29,5 +29,10 @@ namespace Assignment_4
             Add_to_Table a = new Add_to_Table();
             a.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
