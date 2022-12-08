@@ -90,6 +90,12 @@
     <Compile Include="accountTable.Designer.cs">
       <DependentUpon>accountTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Add to Customer Table.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add to Customer Table.Designer.cs">
+      <DependentUpon>Add to Customer Table.cs</DependentUpon>
+    </Compile>
     <Compile Include="Add to Table.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +142,9 @@
     </Compile>
     <EmbeddedResource Include="accountTable.resx">
       <DependentUpon>accountTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add to Customer Table.resx">
+      <DependentUpon>Add to Customer Table.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Add to Table.resx">
       <DependentUpon>Add to Table.cs</DependentUpon>

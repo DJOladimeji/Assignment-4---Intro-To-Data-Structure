@@ -17,5 +17,11 @@ namespace Assignment_4
             InitializeComponent();
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Add_to_Customer_Table a= new Add_to_Customer_Table();
+
+            a.Show();
+        }
     }
 }
