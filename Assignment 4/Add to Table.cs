@@ -17,17 +17,5 @@ namespace Assignment_4
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Add_to_Account_Table a = new Add_to_Account_Table();
-
-            a.Show(); 
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            Add_to_Dependant_Table a = new Add_to_Dependant_Table();
-            a.Show();
-        }
     }
 }

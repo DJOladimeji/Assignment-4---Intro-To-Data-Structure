@@ -150,41 +150,6 @@ namespace Assignment_4
             
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                string connstring = "server=localhost; uid=root;pwd=Tamilore2003!;database=arnoldagritools";
-                MySqlConnection con = new MySqlConnection();
-                con.ConnectionString = connstring;
-                con.Open();
-                string sql = "select * from dependanttable";
-                MySqlCommand cmd = new MySqlCommand(sql, con);
-                MySqlDataReader reader = cmd.ExecuteReader();
-
-                int i = 0;
-
-                while (reader.Read())
-                {
-                    dependantTableDependantID[i] = reader["dependantID"].ToString();
-                    dependantTableFirstName[i] = reader["firstName"].ToString();
-                    dependantTableLastName[i] = reader["lastName"].ToString();
-                    dependantTableAge[i] = reader["age"].ToString();
-                    dependantTableEmployeeID[i] = reader["employeeID"].ToString();
-
-                    i++;
-                }
-            }
-            catch (MySqlException ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
-
-            dependantTable d = new dependantTable();
-
-            d.Show();
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             try
@@ -221,51 +186,7 @@ namespace Assignment_4
             b.Show();
         }
 
-        private void button6_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                string connstring = "server=localhost; uid=root;pwd=Tamilore2003!;database=arnoldagritools";
-                MySqlConnection con = new MySqlConnection();
-                con.ConnectionString = connstring;
-                con.Open();
-                string sql = "select * from employeetable";
-                MySqlCommand cmd = new MySqlCommand(sql, con);
-                MySqlDataReader reader = cmd.ExecuteReader();
-
-                int i = 0;
-
-                while (reader.Read())
-                {
-                    employeeTableEmployeeID[i] = reader["employeeID"].ToString();
-                    employeeTableFirstName[i] = reader["firstName"].ToString();
-                    employeeTableLastname[i] = reader["lastName"].ToString();
-                    employeeTableStreetAddress[i] = reader["streetAddress"].ToString();
-                    employeeTableCity[i] = reader["city"].ToString();
-                    employeeTableProv[i] = reader["prov"].ToString();
-                    employeeTablePhoneNum[i] = reader["phoneNum"].ToString();
-                    employeeTableBirthDay[i] = reader["BirthDay"].ToString();
-                    employeeTableBirthMonth[i] = reader["BirthMonth"].ToString();
-                    employeeTableBirthYear[i] = reader["birthYear"].ToString();
-                    employeeTableTitle[i] = reader["title"].ToString();
-                    employeeTableSalary[i] = reader["salary"].ToString();
-                    employeeTableNoOfSkills[i] = reader["noOfSkills"].ToString();
-                    employeeTableAge[i] = reader["age"].ToString();
-                    employeeTableDepartmentID[i] = reader["departmentID"].ToString();
-                    employeeTableBranchID[i] = reader["branchID"].ToString();
-
-
-                    i++;
-                }
-            }
-            catch (MySqlException ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
-
-            employeeTable et = new employeeTable();
-            et.Show(); 
-        }
+      
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -345,38 +266,6 @@ namespace Assignment_4
 
             itemTable it = new itemTable();
             it.Show();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                string connstring = "server=localhost; uid=root;pwd=Tamilore2003!;database=arnoldagritools";
-                MySqlConnection con = new MySqlConnection();
-                con.ConnectionString = connstring;
-                con.Open();
-                string sql = "select * from departmenttable";
-                MySqlCommand cmd = new MySqlCommand(sql, con);
-                MySqlDataReader reader = cmd.ExecuteReader();
-
-                int i = 0;
-
-                while (reader.Read())
-                {
-                    departmentTableDepartmentID[i] = reader["departmentID"].ToString();
-                    departmentTableName[i] = reader["name"].ToString();
-                    departmentTableBranchID[i] = reader["branchID"].ToString();
-
-                    i++;
-                }
-            }
-            catch (MySqlException ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
-
-            departmentTable d = new departmentTable();
-            d.Show(); 
         }
 
         private void button7_Click(object sender, EventArgs e)

@@ -90,18 +90,6 @@
     <Compile Include="accountTable.Designer.cs">
       <DependentUpon>accountTable.cs</DependentUpon>
     </Compile>
-    <Compile Include="Add to Account Table.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Add to Account Table.Designer.cs">
-      <DependentUpon>Add to Account Table.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Add to Dependant Table.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Add to Dependant Table.Designer.cs">
-      <DependentUpon>Add to Dependant Table.cs</DependentUpon>
-    </Compile>
     <Compile Include="Add to Table.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,24 +107,6 @@
     </Compile>
     <Compile Include="customerTable.Designer.cs">
       <DependentUpon>customerTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="departmentTable.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="departmentTable.Designer.cs">
-      <DependentUpon>departmentTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="dependantTable.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="dependantTable.Designer.cs">
-      <DependentUpon>dependantTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="employeeTable.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="employeeTable.Designer.cs">
-      <DependentUpon>employeeTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -167,12 +137,6 @@
     <EmbeddedResource Include="accountTable.resx">
       <DependentUpon>accountTable.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Add to Account Table.resx">
-      <DependentUpon>Add to Account Table.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Add to Dependant Table.resx">
-      <DependentUpon>Add to Dependant Table.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Add to Table.resx">
       <DependentUpon>Add to Table.cs</DependentUpon>
     </EmbeddedResource>
@@ -181,15 +145,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="customerTable.resx">
       <DependentUpon>customerTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="departmentTable.resx">
-      <DependentUpon>departmentTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="dependantTable.resx">
-      <DependentUpon>dependantTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="employeeTable.resx">
-      <DependentUpon>employeeTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
