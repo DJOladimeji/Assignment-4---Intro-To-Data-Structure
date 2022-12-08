@@ -273,7 +273,7 @@ namespace Assignment_4
             try
             {
                 string connstring = "server=localhost; uid=root;pwd=Tamilore2003!;database=arnoldagritools";
-                MySqlConnection con = new MySqlConnection();
+                MySqlConnection con = new MySqlConnection(); 
                 con.ConnectionString = connstring;
                 con.Open();
                 string sql = "select * from ordertable";
