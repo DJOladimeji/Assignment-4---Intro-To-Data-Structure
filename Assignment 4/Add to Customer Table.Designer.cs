@@ -367,6 +367,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Add_to_Customer_Table";
             this.Text = "Add_to_Customer_Table";
+            this.Load += new System.EventHandler(this.Add_to_Customer_Table_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

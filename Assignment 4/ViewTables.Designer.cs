@@ -109,6 +109,7 @@
             this.Controls.Add(this.button2);
             this.Name = "ViewTables";
             this.Text = "ViewTables";
+            this.Load += new System.EventHandler(this.ViewTables_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

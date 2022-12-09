@@ -241,6 +241,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Add_to_Order_Table";
             this.Text = "Add_to_Order_Table";
+            this.Load += new System.EventHandler(this.Add_to_Order_Table_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

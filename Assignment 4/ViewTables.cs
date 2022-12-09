@@ -111,6 +111,8 @@ namespace Assignment_4
 
         private void button1_Click(object sender, EventArgs e)
         {
+            var watch = System.Diagnostics.Stopwatch.StartNew();;
+
             try
             {
                 string connstring = "server=localhost; uid=root;pwd=Tamilore2003!;database=arnoldagritools";
@@ -142,16 +144,22 @@ namespace Assignment_4
                 MessageBox.Show(ex.ToString()); 
             }
 
+            watch.Stop();
+
             
 
             accountTable a = new accountTable();
 
             a.Show();
-            
+
+            MessageBox.Show($"Execution time: {watch.ElapsedMilliseconds} ms");
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            var watch = System.Diagnostics.Stopwatch.StartNew();
+
             try
             {
                 string connstring = "server=localhost; uid=root;pwd=Tamilore2003!;database=arnoldagritools";
@@ -182,14 +190,22 @@ namespace Assignment_4
                 MessageBox.Show(ex.ToString());
             }
 
+            watch.Stop();
+
+            
+
             branchTable b = new branchTable();
             b.Show();
+
+            MessageBox.Show($"Execution time: {watch.ElapsedMilliseconds} ms");
         }
 
       
 
         private void button3_Click(object sender, EventArgs e)
         {
+            var watch = System.Diagnostics.Stopwatch.StartNew();
+
             try
             {
                 string connstring = "server=localhost; uid=root;pwd=Tamilore2003!;database=arnoldagritools";
@@ -228,13 +244,21 @@ namespace Assignment_4
                 MessageBox.Show(ex.ToString());
             }
 
+            watch.Stop();
+
+            
+
             customerTable c = new customerTable();
 
             c.Show();
+
+            MessageBox.Show($"Execution time: {watch.ElapsedMilliseconds} ms");
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
+            var watch = System.Diagnostics.Stopwatch.StartNew();
+
             try
             {
                 string connstring = "server=localhost; uid=root;pwd=Tamilore2003!;database=arnoldagritools";
@@ -264,12 +288,20 @@ namespace Assignment_4
                 MessageBox.Show(ex.ToString());
             }
 
+            watch.Stop();
+
+            
+
             itemTable it = new itemTable();
             it.Show();
+
+            MessageBox.Show($"Execution time: {watch.ElapsedMilliseconds} ms");
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
+            var watch = System.Diagnostics.Stopwatch.StartNew();
+
             try
             {
                 string connstring = "server=localhost; uid=root;pwd=Tamilore2003!;database=arnoldagritools";
@@ -302,13 +334,23 @@ namespace Assignment_4
                 MessageBox.Show(ex.ToString());
             }
 
+            watch.Stop();
+
+            
+
             orderTable o = new orderTable();
-            o.Show(); 
+            o.Show();
+            MessageBox.Show($"Execution time: {watch.ElapsedMilliseconds} ms");
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void ViewTables_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

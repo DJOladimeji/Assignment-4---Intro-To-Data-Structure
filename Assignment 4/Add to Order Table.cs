@@ -21,6 +21,8 @@ namespace Assignment_4
 
         private void button1_Click(object sender, EventArgs e)
         {
+            var watch = System.Diagnostics.Stopwatch.StartNew();
+
             try
             {
                 string connstring = "server=localhost; uid=root;pwd=Tamilore2003!;database=arnoldagritools";
@@ -38,14 +40,25 @@ namespace Assignment_4
                 MessageBox.Show(ex.ToString());
             }
 
+            watch.Stop();
+
+            
+
             MessageBox.Show("Added To Table");
 
             this.Close();
+
+            MessageBox.Show($"Execution time: {watch.ElapsedMilliseconds} ms");
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Add_to_Order_Table_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -120,6 +120,18 @@
     <Compile Include="branchTable.Designer.cs">
       <DependentUpon>branchTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="CusBranchJoin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CusBranchJoin.Designer.cs">
+      <DependentUpon>CusBranchJoin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CusOrderJoin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CusOrderJoin.Designer.cs">
+      <DependentUpon>CusOrderJoin.cs</DependentUpon>
+    </Compile>
     <Compile Include="customerTable.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +156,12 @@
     <Compile Include="orderTable.Designer.cs">
       <DependentUpon>orderTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Other Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other Reports.Designer.cs">
+      <DependentUpon>Other Reports.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewTables.cs">
@@ -151,6 +169,18 @@
     </Compile>
     <Compile Include="ViewTables.Designer.cs">
       <DependentUpon>ViewTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Which Customer Of Branch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Which Customer Of Branch.Designer.cs">
+      <DependentUpon>Which Customer Of Branch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Which Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Which Customer.Designer.cs">
+      <DependentUpon>Which Customer.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="accountTable.resx">
       <DependentUpon>accountTable.cs</DependentUpon>
@@ -170,6 +200,12 @@
     <EmbeddedResource Include="branchTable.resx">
       <DependentUpon>branchTable.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CusBranchJoin.resx">
+      <DependentUpon>CusBranchJoin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CusOrderJoin.resx">
+      <DependentUpon>CusOrderJoin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="customerTable.resx">
       <DependentUpon>customerTable.cs</DependentUpon>
     </EmbeddedResource>
@@ -182,6 +218,9 @@
     <EmbeddedResource Include="orderTable.resx">
       <DependentUpon>orderTable.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Other Reports.resx">
+      <DependentUpon>Other Reports.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -193,6 +232,12 @@
     </Compile>
     <EmbeddedResource Include="ViewTables.resx">
       <DependentUpon>ViewTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Which Customer Of Branch.resx">
+      <DependentUpon>Which Customer Of Branch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Which Customer.resx">
+      <DependentUpon>Which Customer.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

@@ -199,6 +199,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Add_to_Branch_table";
             this.Text = "Add_to_Branch_table";
+            this.Load += new System.EventHandler(this.Add_to_Branch_table_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

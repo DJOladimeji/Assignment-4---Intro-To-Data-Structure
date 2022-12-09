@@ -10,24 +10,17 @@ using System.Windows.Forms;
 
 namespace Assignment_4
 {
-    public partial class Form1 : Form
+    public partial class Other_Reports : Form
     {
-        public Form1()
+        public Other_Reports()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ViewTables v = new ViewTables();
-
-            v.Show();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Add_to_Table a = new Add_to_Table();
-            a.Show();
+            Which_Customer w = new Which_Customer();
+            w.Show(); 
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -35,11 +28,10 @@ namespace Assignment_4
             this.Close();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            Other_Reports o = new Other_Reports();
-
-            o.Show(); 
+            Which_Customer_Of_Branch w = new Which_Customer_Of_Branch();
+            w.Show();
         }
     }
 }
