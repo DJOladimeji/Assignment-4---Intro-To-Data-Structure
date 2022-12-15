@@ -33,5 +33,11 @@ namespace Assignment_4
             Which_Customer_Of_Branch w = new Which_Customer_Of_Branch();
             w.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+          Which_Customer_Of_Order w = new Which_Customer_Of_Order();
+            w.Show();
+        }
     }
 }

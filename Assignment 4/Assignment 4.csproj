@@ -126,6 +126,12 @@
     <Compile Include="CusBranchJoin.Designer.cs">
       <DependentUpon>CusBranchJoin.cs</DependentUpon>
     </Compile>
+    <Compile Include="CusNoOFItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CusNoOFItem.Designer.cs">
+      <DependentUpon>CusNoOFItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="CusOrderJoin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -176,6 +182,12 @@
     <Compile Include="Which Customer Of Branch.Designer.cs">
       <DependentUpon>Which Customer Of Branch.cs</DependentUpon>
     </Compile>
+    <Compile Include="Which Customer Of Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Which Customer Of Order.Designer.cs">
+      <DependentUpon>Which Customer Of Order.cs</DependentUpon>
+    </Compile>
     <Compile Include="Which Customer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -202,6 +214,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CusBranchJoin.resx">
       <DependentUpon>CusBranchJoin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CusNoOFItem.resx">
+      <DependentUpon>CusNoOFItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CusOrderJoin.resx">
       <DependentUpon>CusOrderJoin.cs</DependentUpon>
@@ -235,6 +250,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Which Customer Of Branch.resx">
       <DependentUpon>Which Customer Of Branch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Which Customer Of Order.resx">
+      <DependentUpon>Which Customer Of Order.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Which Customer.resx">
       <DependentUpon>Which Customer.cs</DependentUpon>
